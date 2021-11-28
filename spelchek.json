@@ -1,11 +1,14 @@
 {
 	"Incorrect yoosij of prohnowns": {
 		"!control": {
-			"settings": ":anycap"
+			"settings": "anycap",
 			"value": {
-				"key": ["he", "she", "you", "me", "us", "they", "them", "her", "his"]
+				"key": ["he", "she", "you", "me", "us", "they", "them", "her", "his"],
 				"value": "<<delete>>"
 			}
 		}
+	},
+	"Incorrect capitlizayshin": {
+		"I:capital": "i"
 	}
 }
