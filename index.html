@@ -1,0 +1,42 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="author" content="illogicalapple">
+	<meta name="description" content="stuff or something">
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+	<link rel="icon" href="/apple.png">
+	<link rel="stylesheet" href="/styles.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Lato&amp;display=swap" rel="stylesheet">
+	<script src="/stuff.js"></script>
+	<title>thing</title>
+	<style>
+	@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
+	.CircularProgressbarWithChildren__children {
+		position: relative;
+	}
+	</style>
+</head>
+
+<body style="margin:0">
+	<nav id="navigation" style="position:fixed;left:0;top:0;height:75px;box-shadow:0 4px 4px #0008;background-color:var(--darkred)" class="full-width">
+		<div style="position:absolute;left:10px;width:50px" class="relative-full-height"><a href="/" style="position:absolute;left:0;padding:0 20px;display:table" class="relative-full-height title bold float-left option"><span style="display:table-cell;vertical-align:middle;text-align:center">illogicalapple</span></a></div>
+		<div style="position:absolute;right:10px;top:0" class="relative-full-height"><a href="/my-stuff" style="display:table;padding:0 20px" class="relative-full-height float-right option"><span style="display:table-cell;vertical-align:middle;text-align:center">Stuff I made</span></a> <a href="/" style="display:table;padding:0 20px" class="relative-full-height float-right option"><span style="display:table-cell;vertical-align:middle;text-align:center">Home</span></a></div><img src="/menu.svg">
+		<div class="menu" style="display:none"><a href="/">Home</a>
+			<br><a href="/my-stuff">Stuff I made</a></div>
+	</nav>
+	<main id="content">
+		<div contenteditable="" style="width:50vw;height:calc(100% - 60px);margin:30px;box-shadow:#d3d3d3 3px 3px 7px 0;padding:20px;outline:0">Hello
+			<div>blah</div>
+			<div>boom</div>
+			<div>abcdefg</div>
+		</div>
+		<script>
+		document.querySelector("img.darkModeToggle").addEventListener("click", function() {
+			this.setAttribute("src", "/moon.svg" === this.getAttribute("src") ? "/sun.svg" : "/moon.svg"), document.body.toggleAttribute("data-dark-mode"), localStorage.darkMode = String(document.body.hasAttribute("data-dark-mode"))
+		});
+		</script>
+	</main>
+</body>
+
+</html>
