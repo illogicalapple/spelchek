@@ -10,12 +10,6 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato&amp;display=swap" rel="stylesheet">
 	<script src="/stuff.js"></script>
 	<title>thing</title>
-	<style>
-	@import url('https://fonts.googleapis.com/css2?family=Mulish:wght@400;600;700&display=swap');
-	.CircularProgressbarWithChildren__children {
-		position: relative;
-	}
-	</style>
 </head>
 
 <body style="margin:0">
@@ -26,11 +20,11 @@
 			<br><a href="/my-stuff">Stuff I made</a></div>
 	</nav>
 	<main id="content">
-		<div contenteditable="" style="width:50vw;height:calc(100% - 60px);margin:30px;box-shadow:#d3d3d3 3px 3px 7px 0;padding:20px;outline:0"></div>
+		<div contenteditable="" style="width:calc(100vw - 60px);height:calc(100% - 60px);margin:30px;box-shadow:#d3d3d3 3px 3px 7px 0;padding:20px;outline:0"></div>
 		<script>
-		document.querySelector("img.darkModeToggle").addEventListener("click", function() {
-			this.setAttribute("src", "/moon.svg" === this.getAttribute("src") ? "/sun.svg" : "/moon.svg"), document.body.toggleAttribute("data-dark-mode"), localStorage.darkMode = String(document.body.hasAttribute("data-dark-mode"))
-		});
+			document.querySelector("img.darkModeToggle").addEventListener("click", function() {
+				this.setAttribute("src", "/moon.svg" === this.getAttribute("src") ? "/sun.svg" : "/moon.svg"), document.body.toggleAttribute("data-dark-mode"), localStorage.darkMode = String(document.body.hasAttribute("data-dark-mode"))
+			});
 		</script>
 	</main>
 </body>
